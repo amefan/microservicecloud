@@ -2,6 +2,7 @@ package com.afan.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @ClassName: SpringBootApplication
@@ -10,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date : 2018/12/12 14:25
  */
 @SpringBootApplication
+@EnableEurekaClient
 public class SpringApplication8001 {
 
 

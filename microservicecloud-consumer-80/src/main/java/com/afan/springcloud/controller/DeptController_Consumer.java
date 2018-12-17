@@ -4,6 +4,7 @@ import com.afan.springcloud.entity.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
@@ -36,5 +37,11 @@ public class DeptController_Consumer {
     public boolean add(Dept dept){
         System.out.println(dept);
         return restTemplate.postForObject(REST_URL_PERFIX+"/dept/add",dept,boolean.class);
+    }
+    // 测试@EnableDiscoveryClient,消费端可以调用服务发现
+    @RequestMapping(value = "/consumer/dept/discovery")
+    public Object discovery()
+    {
+        return restTemplate.getForObject(REST_URL_PERFIX + "/dept/discovery", Object.class);
     }
 }

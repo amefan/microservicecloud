@@ -17,7 +17,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Data
 @Accessors(chain = true)
-class Dept implements Serializable{
+public class Dept implements Serializable{
 
     public Long deptno;
     public String dname;
