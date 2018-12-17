@@ -19,7 +19,8 @@ import java.util.List;
 @RestController
 public class DeptController_Consumer {
 
-    private static final String REST_URL_PERFIX = "http://localhost:8001";
+    private static final String REST_URL_PERFIX = "http://MICROSERVICECLOUD-DEPT";
+    //在集群中通过服务名去找服务的提供者
 
     @Autowired
     private RestTemplate restTemplate;

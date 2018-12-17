@@ -2,19 +2,19 @@ package com.afan.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
- * @ClassName: SpringApplicationConsumer80
+ * @ClassName: SpringApplicationEureKa7001
  * @Description: TODO
  * @Author：Administrator
- * @Date : 2018/12/13 13:23
+ * @Date : 2018/12/13 15:19
  */
 @SpringBootApplication
-@EnableEurekaClient
-public class SpringApplicationConsumer80 {
+@EnableEurekaServer
+public class SpringApplicationEureKa7002 {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringApplicationConsumer80.class,args);
+        SpringApplication.run(SpringApplicationEureKa7002.class,args);
     }
 }
